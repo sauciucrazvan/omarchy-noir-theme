@@ -4,3 +4,14 @@
 @define-color border          #3A3B40;
 @define-color foreground      #C5C6CA;
 @define-color background      #141518;
+
+window .box-wrapper {
+    border-radius: 4px;
+}
+
+window child:hover .item-box,
+window child:selected .item-box {
+    background: alpha(@selected-text, 0.075);
+    border-color: alpha(@selected-text, 0.3);
+    border-radius: 4px;
+}
